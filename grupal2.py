@@ -17,7 +17,6 @@ una unidad extra. Sino se entregan las unidades justas. Cada una de las posibles
 * El código debe estar debidamente comentado para asegurar su comprensión.
 
 '''
-
 # 1.Definir el stock de un producto en una variable
 stock_producto = 50
 
@@ -30,7 +29,6 @@ stock_producto = 50
 # una unidad extra. Sino se entregan las unidades justas. Cada una de las posibles acciones debe imprimir un mensaje explicando lo realizado.
 # 7. No se pueden solicitar más de 20 unidades en un mismo pedido.
 # 8. Si el valor ingresado es superior al stock disponible, este debe entregar un mensaje indicando que no es posible realizar esta acción debido a que no hay stock suficiente.
-
 print(
     '''\n..:: Menú ::..\n
 1) Ver stock disponible del producto
@@ -46,7 +44,6 @@ while True:
         break
     except ValueError:
         print("Opción ingresada no valida, vuelva a ingresarla opción")
-    
 if opcion == 1:
     print(f'El stock del producto es de: {stock_producto}')
 elif opcion == 2:
@@ -69,8 +66,7 @@ elif opcion == 2:
                 stock_producto = stock_producto - productos_seleccionados
                 print(f'El stock restante es de: {stock_producto}')
         else:
-            print(f"Solicitaste {productos_seleccionados} y en stock hay disponible {stock_producto}")
-
+            print(f"Solicitaste {productos_seleccionados} y hay disponible {stock_producto}")
 elif opcion == 0:
     print("Programa Terminado")
 else:
